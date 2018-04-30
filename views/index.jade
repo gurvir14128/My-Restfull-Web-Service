@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  h1= title
+  p The greatest videogames of this Decade!
+
+  // Wrapper
+  #wrapper
+  
+    // USER INFO
+    #gameInfo
+      h1 Videogame Information
+      p
+        strong Videogame:
+        |  <span id='gameInfovideogame'></span>
+        br
+        strong Main Character:
+        |  <span id='gameInfoMainCharacter'></span>
+        br
+        strong Console:
+        |  <span id='gameInfoconsole'></span>
+        br
+        strong Genre:
+        |  <span id='gameInfogenre'></span>
+    // /USER INFO
+
+    // Videogames
+    h2 Videogames
+    #videogames
+      table
+        thead
+          th Videogame
+          th Main Character
+        tbody
+    // /Videogame
+    
+   // /WRAPPER
